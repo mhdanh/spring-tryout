@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/mytul-db
+    username: admin
+    password: secret
+  flyway:
+    enabled: true
+    baseline-on-migrate: false
+  jpa:
+#    database: POSTGRESQL
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        type: TRACE
+        SQL: DEBUG
+server:
+  port: 8082

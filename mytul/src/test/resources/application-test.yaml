@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    # A Postgres Test Container will be created automagically due the usage of "tc" in URL
+    url: jdbc:tc:postgresql:12:///mytul-db?TC_REUSABLE=true
+    username: admin
+    password: secret
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
